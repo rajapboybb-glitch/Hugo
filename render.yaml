@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: savetrack-bot
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_ID
+        sync: false
